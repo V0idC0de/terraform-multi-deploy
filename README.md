@@ -29,7 +29,8 @@ Die beiden Umgebungen sollen die folgenden Input-Variablen verwendetn, um korrek
 Zeige dein Repository und wie die Änderung bzw. dein Prozess je einen erfolgreichen Workflow-Lauf
 mit Parametern für Development- und Produktionsumgebung auslöst.
 
-Die Terraform-Outputs am Ende des Plans zeigen die Konfiguration kompakt - du musst die Ressourcen selbst nicht analysieren.
+Die Terraform-Outputs am Ende des Plans (diese werden auch als Annotation im GitHub Workflow sichtbar gemacht)
+zeigen die erzeugten Ressourcen und ihre Einstellungen kompakt an. Du musst die Ressourcen selbst nicht analysieren.
 Ohne externe IP-Adresse ist das Feld im Output `null`; bei aktivierter externer IP-Adresse ist der Wert erst nach einem Apply bekannt und erscheint als `(known after apply)`.
 
 Ganz konkret bedeutet das für dich: In einem Workflow Run für die Developmentumgebung werden `instances`, `location` und `project`
